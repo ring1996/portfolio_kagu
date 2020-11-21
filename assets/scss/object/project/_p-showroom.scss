@@ -1,0 +1,83 @@
+.p-showroom {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  &__content {
+    margin-top: 40px;
+    &__title {
+      font-size: 1.6rem;
+      font-weight: 500;
+      background-color: $color-gray;
+      padding: 20px;
+    }
+    &__item {
+      padding-bottom: 30px;
+      padding-left: 20px;
+      border-bottom: 1px solid $color-brown3;
+      &:last-of-type {
+        border-bottom: none;
+      }
+      &__name {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 30px;
+      }
+      &__address {
+        font-size: 1.4rem;
+        margin-top: 20px;
+        a {
+          @include hover-action;
+        }
+      }
+      &__image {
+        width: 200px;
+        margin: 30px auto 0;
+        order: -1;
+      }
+      &__button {
+        margin-top: 30px;
+        a {
+          .cls-1 {
+            stroke: currentColor;
+            fill: none;
+            stroke-linecap:round;
+            stroke-linejoin:round;
+          }
+          svg {
+            width: 13px;
+            height: 13px;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media(min, triple) {
+  .p-showroom {
+    padding-top: 80px;
+    &__content {
+      margin-top: 60px;
+      &__title {
+        font-size: 2rem;
+        padding: 30px;
+      }
+      &__item {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 40px;
+        padding-left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        &__name {
+          font-size: 1.6rem;
+        }
+        &__image {
+          margin-left: 0;
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}

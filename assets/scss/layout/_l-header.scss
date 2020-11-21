@@ -1,0 +1,15 @@
+.l-header {
+  position: fixed;
+  width: 100%;
+  background-color: $color-white;
+  padding: 0 5%;
+  height: 60px;
+  z-index: 900;
+}
+
+@include media(min, menu) {
+  .l-header {
+    padding-right: 0;
+    height: 80px;
+  }
+}

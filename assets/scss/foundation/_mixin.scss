@@ -1,0 +1,29 @@
+// hover-action
+@mixin hover-action {
+	transition: opacity ease-out 0.3s;
+	outline: none;
+	&:hover,
+	&:focus {
+		opacity: 0.7;
+	}
+}
+
+// inner-reset
+@mixin inner-reset {
+	margin: 0 calc(50% - 50vw);
+	width: 100vw;
+}
+
+// none
+@include media(max, desk) {
+  .sp-none {
+    display: none;
+    vertical-align: bottom;
+  }
+}
+
+@include media(min, desk) {
+  .pc-none {
+    display: none;
+  }
+}

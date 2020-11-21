@@ -1,0 +1,31 @@
+.c-title {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: .15em;
+  text-align: center;
+  span {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: .05em;
+    margin-top: 10px;
+  }
+  &.--primary {
+    color: $color-black;
+    span {
+      color: $color-brown2;
+    }
+  }
+  &.--recruit {
+    color: $color-white;
+  }
+}
+
+@include media(min, desk) {
+  .c-title {
+    font-size: 2.4rem;
+    span {
+      font-size: 1.5rem;
+    }
+  }
+}

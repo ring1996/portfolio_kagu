@@ -1,0 +1,63 @@
+.p-phone {
+  padding-top: 50px;
+  &__text {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    text-align: center;
+  }
+  &__inner {
+    &::before {
+      content: url("../images/common/icon_telephone.svg");
+      display: block;
+      width: 47px;
+      height: 47px;
+      margin-right: 10px;
+    }
+  }
+  &__inner {
+    margin: 15px auto 0;
+    padding: 30px 0;
+    max-width: 800px;
+    background-color: $color-gray;
+  }
+  &__number {
+    font-size: 3rem;
+    font-family: $font-en;
+    color: $color-brown2;
+    line-height: 1;
+    &__time {
+      display: block;
+      font-size: 1.2rem;
+      font-family: $font-jp;
+      color: $color-black2;
+      margin-top: 5px;
+    }
+  }
+}
+
+@include media(min, desk) {
+  .p-phone {
+    padding-top: 100px;
+    &__text {
+      margin-top: 60px;
+    }
+    &__inner {
+      &::before {
+        width: 68px;
+        height: 68px;
+        margin-right: 30px;
+      }
+    }
+    &__inner {
+      margin-top: 30px;
+      padding: 40px 0;
+    }
+    &__number {
+      font-size: 4.8rem;
+      &__time {
+        font-size: 1.5rem;
+        margin-top: 5px;
+      }
+    }
+  }
+}

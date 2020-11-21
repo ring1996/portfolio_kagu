@@ -1,0 +1,21 @@
+.u-arrow {
+  @include hover-action;
+  &.--right {
+    &::after {
+      content: url("../images/common/icon_arrow_right.svg");
+      display: inline-block;
+      width: 21px;
+      height: 6px;
+      margin-left: 5px;
+    }
+  }
+  &.--left {
+    &::before {
+      content: url("../images/common/icon_arrow_left.svg");
+      display: inline-block;
+      width: 21px;
+      height: 6px;
+      margin-right: 5px;
+    }
+  }
+}

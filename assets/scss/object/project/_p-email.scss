@@ -1,0 +1,160 @@
+.p-email {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  &__text {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 30px;
+  }
+  &__form {
+    max-width: 1060px;
+    margin: 30px auto 0;
+    &__list {
+      border-bottom: 1px solid $color-gray2;
+    }
+    &__inner {
+      padding: 20px;
+      border-top: 1px solid $color-gray2;
+    }
+    &__term {
+      font-size: 1.4rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      span {
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: $color-white;
+        background-color: $color-green;
+        padding: 0 4px;
+        margin-left: 10px;
+      }
+    }
+    &__description {
+      margin-top: 10px;
+      input,
+      textarea {
+        font-size: 1.6rem;
+        background-color: $color-gray;
+        color: $color-black2;
+        padding: .5em 1em;
+        width: 100%;
+      }
+      input {
+        &:-webkit-autofill {
+          box-shadow: 0 0 0 72px $color-gray inset;
+        }
+      }
+      &__list {
+        display: flex;
+      }
+      &__item {
+        label {
+          font-size: 1.4rem;
+          display: flex;
+          align-items: center;
+        }
+        span {
+          min-width: 40px;
+        }
+        input {
+          max-width: 220px;
+        }
+        + .p-email__form__description__item {
+          margin-left: 10px;
+        }
+      }
+    }
+    &__agreement {
+      &__text {
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        label {
+          display: flex;
+          align-items: center;
+        }
+      }
+      &__checkbox-input {
+        opacity: 0;
+        &:checked {
+          + .p-email__form__agreement__checkbox-parts::after {
+            opacity: 1;
+          }
+        }
+      }
+      &__checkbox-parts {
+        position: relative;
+        padding-left: 30px;
+        &::before {
+          content: "";
+          display: block;
+          width: 20px;
+          height: 20px;
+          background-color: $color-gray;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+        }
+        &::after {
+          content: "";
+          display: block;
+          width: 7px;
+          height: 11px;
+          border-right: 2px solid $color-green;
+          border-bottom: 2px solid $color-green;
+          position: absolute;
+          z-index: 1;
+          top: calc(50% - 1px);
+          left: 7px;
+          transform: translateY(-50%) rotate(45deg);
+          opacity: 0;
+          transition-property: opacity;
+          transition-duration: .3s;
+          transition-timing-function: ease-out;
+        }
+        a {
+          @include hover-action;
+          color: $color-green;
+          text-decoration: underline;
+        }
+      }
+    }
+    &__button {
+      margin-top: 30px;
+    }
+  }
+}
+
+@include media(min, desk) {
+  .p-email {
+    padding-top: 80px;
+    &__text {
+      margin-top: 60px;
+    }
+    &__form {
+      &__inner {
+        display: flex;
+        align-items: center;
+      }
+      &__term {
+        flex-basis: 280px;
+      }
+      &__description {
+        width: 100%;
+        margin-top: 0;
+        &__item {
+          + .p-email__form__description__item {
+            margin-left: 40px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.l-container {
+  width: 100%;
+  max-width: calc(960px + 10%);
+  padding: 0 5%;
+  margin: 0 auto;
+  &.--large {
+    max-width: calc(1300px + 10%);
+  }
+}

@@ -1,0 +1,53 @@
+.p-store {
+  padding-top: 30px;
+  padding-bottom: 100px;
+  &__inner {
+    + .p-store__inner {
+      padding-top: 60px;
+    }
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 30px;
+  }
+  &__text {
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+  &__button {
+    margin-top: 30px;
+  }
+  &__image {
+    order: -1;
+  }
+}
+
+
+@include media(min, triple) {
+  .p-store {
+    padding-top: 60px;
+    &__inner {
+      column-gap: 60px;
+      &:nth-of-type(even) {
+        .p-store__image {
+          order: 0;
+        }
+      }
+      + .p-store__inner {
+        padding-top: 80px;
+      }
+    }
+    &__title {
+      font-size: 2.4rem;
+      margin-top: 0;
+    }
+    &__text {
+      margin-top: 40px;
+    }
+    &__button {
+      margin-top: 50px;
+      margin-right: auto;
+    }
+  }
+}

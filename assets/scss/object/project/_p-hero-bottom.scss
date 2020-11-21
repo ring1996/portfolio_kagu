@@ -1,0 +1,41 @@
+.p-hero-bottom {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 240px;
+  &.--privacy-policy {
+    background-image: url("../images/privacy-policy/privacy-policy_hero.jpg");
+  }
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: $color-white;
+    font-size: 2.4rem;
+    letter-spacing: .2em;
+    white-space: nowrap;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    span {
+      display: block;
+      font-size: 1.4rem;
+      letter-spacing: .1em;
+      text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+      margin-top: 10px;
+    }
+  }
+}
+
+@include media(min, desk) {
+  .p-hero-bottom {
+    height: 320px;
+    &__title {
+      font-size: 3.6rem;
+      span {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.p-breadcrumb {
+  background-color: $color-brown;
+  padding: 10px 0;
+  &__item {
+    font-size: 1.2rem;
+    color: $color-white;
+    white-space: nowrap;
+    a {
+      @include hover-action;
+    }
+    + .p-breadcrumb__item {
+      &::before {
+        content: "\03e";
+        margin: 0 12px;
+      }
+    }
+    &:last-of-type {
+      pointer-events: none;
+      overflow: hidden;
+    }
+  }
+}
+
+@include media(min, desk) {
+  .p-breadcrumb {
+    &__item {
+      font-size: 1.3rem;
+    }
+  }
+}

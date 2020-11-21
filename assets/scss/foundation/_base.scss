@@ -1,0 +1,45 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $color-txt-black;
+  font-size: $font-size;
+  font-family: $font-jp;
+  font-weight: $font-weight-txt;
+  line-height: $line-height-txt;
+  letter-spacing: $letter-spacing-txt;
+  -webkit-text-size-adjust: 100%;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-txt;
+  line-height: $line-height-ttl;
+  letter-spacing: $letter-spacing-ttl;
+}
+
+*[lang="en"] {
+  font-family: $font-en;
+  text-transform: uppercase;
+}
+
+textarea {
+  resize: vertical;
+}
+
+body.is-activeHamburger {
+  overflow: hidden;
+}

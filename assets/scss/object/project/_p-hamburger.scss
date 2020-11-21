@@ -1,0 +1,77 @@
+.p-hamburger {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: -15px;
+  box-shadow: 0 0 2rem transparent;
+  z-index: 1100;
+  outline: none;
+  transition-property: box-shadow;
+  transition-duration: .2s;
+  transition-timing-function: ease-out;
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 .5rem rgba($color-black, .5);
+  }
+  &__line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 20px;
+    height: 2px;
+    background-color: $color-black;
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    .p-hamburger[aria-expanded="true"] & {
+      background-color: transparent;
+    }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      display: block;
+      height: 100%;
+      background-color: inherit;
+      transform: inherit;
+      transition-property: top transform;
+      transition-duration: .2s;
+      transition-timing-function: ease-out;
+      .p-hamburger[aria-expanded="true"] & {
+        top: 0;
+        background-color: $color-white;
+      }
+    }
+    &::before {
+      width: 120%;
+      top: -7px;
+      .p-hamburger[aria-expanded="true"] & {
+        width: 100%;
+        transform: rotate(-45deg);
+      }
+    }
+    &::after {
+      width: 80%;
+      top: 7px;
+      .p-hamburger[aria-expanded="true"] & {
+        width: 100%;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+@include media(min, menu) {
+  .p-hamburger {
+    display: none;
+  }
+}

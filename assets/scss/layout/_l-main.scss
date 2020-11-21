@@ -1,0 +1,9 @@
+.l-main {
+  padding-top: 60px;
+}
+
+@include media(min, menu) {
+  .l-main {
+    padding-top: 80px;
+  }
+}

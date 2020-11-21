@@ -1,0 +1,91 @@
+.p-furniture-top {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  &__list {
+    margin-top: 60px;
+  }
+  &__item {
+    &:nth-of-type(n + 2) {
+      margin-top: 60px;
+    }
+    &__inner {
+      order: 1;
+    }
+    &__title {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-top: 30px;
+    }
+    &__text {
+      font-size: 1.5rem;
+      margin-top: 30px;
+    }
+    &__button {
+      margin-top: 50px;
+      a {
+        .cls-1 {
+          stroke: currentColor;
+          fill: none;
+          stroke-linecap:round;
+          stroke-linejoin:round;
+        }
+        svg {
+          width: 13px;
+          height: 13px;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+@include media(min, desk) {
+  .p-furniture-top {
+    margin-top: 80px;
+    padding-bottom: 100px;
+  }
+}
+
+@include media(min, double) {
+  .p-furniture-top {
+    &__list {
+      &.--main {
+        > .p-furniture-top__item {
+          &:nth-child(2n) {
+            .p-furniture-top__item__inner {
+              order: 0;
+            }
+          }
+        }
+      }
+      &.--sub {
+        column-gap: 60px;
+        .p-furniture-top__item {
+          &:nth-of-type(2) {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    &__item {
+      &__content {
+        column-gap: 60px;
+      }
+    }
+  }
+}
+
+@include media(min, triple) {
+  .p-furniture-top {
+    &__list {
+      &.--sub {
+        column-gap: 70px;
+        .p-furniture-top__item {
+          &:nth-of-type(3) {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}

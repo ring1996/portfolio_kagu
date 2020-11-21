@@ -1,0 +1,43 @@
+.c-button {
+  border-width: 2px;
+  border-style: solid;
+  display: block;
+  outline: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 9px 1em;
+  text-align: center;
+  margin: 0 auto;
+  width: 220px;
+  letter-spacing: .1em;
+  &.--primary {
+    color: $color-black;
+    border-color: $color-black;
+    transition-property: background-color, color;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+    &:hover,
+    &:focus {
+      background-color: $color-black;
+      color: $color-white;
+    }
+  }
+  &.--recruit {
+    color: $color-white;
+    border-color: $color-white;
+    transition-property: background-color, color;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+    &:hover,
+    &:focus {
+      background-color: $color-white;
+      color: $color-black;
+    }
+  }
+}
+
+@include media(min, desk) {
+  .c-button {
+    font-size: 1.5rem;
+  }
+}

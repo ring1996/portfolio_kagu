@@ -1,0 +1,37 @@
+.p-recruit {
+  padding: 40px 0;
+  // margin-top: 116px;
+  background-image: url("../images/recruit/recruit_bg_pc.jpg");
+  background-position: center;
+  background-size: cover;
+  color: $color-white;
+  text-align: center;
+  &__text {
+    font-size: 1.5rem;
+    letter-spacing: .2em;
+    line-height: 2.1;
+    margin-top: 40px;
+  }
+  &__button {
+    margin: 30px auto 0;
+  }
+}
+
+@include media(min, desk) {
+  .p-recruit {
+    padding: 80px 0;
+    &__title {
+      font-size: 2.4rem;
+      span {
+        font-size: 1.5rem;
+      }
+    }
+    &__text {
+      font-size: 1.6rem;
+      margin-top: 60px;
+    }
+    &__button {
+      margin: 60px auto 0;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+// fonts
+$font-jp: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+$font-en: "Quicksand", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$font-size: 1.6rem;
+$font-weight-ttl: 700;
+$font-weight-txt: 400;
+$line-height-ttl: 1.5;
+$line-height-txt: 2;
+$letter-spacing-txt: 0.05em;
+$letter-spacing-ttl: 0.05em;
+
+
+// Basic colors
+$color-black:#292929;
+$color-black2:#555555;
+$color-gray: #f7f6f5;
+$color-gray2: #d9dbde;
+$color-white: #fff;
+$color-brown: #b9a393;
+$color-brown2: #aa8f7b;
+$color-brown3: #e7e0db;
+$color-green: #24a2b3;
+
+// Parts colors
+// common
+$color-txt-black: $color-black;
+$color-txt-white: $color-white;
+
+// header
+
+// footer
+
+// btn
+
+// other
+$color-border: $color-black2;
+
+// breakpoints
+$breakpoints: (
+	"double": "560px",
+	"triple": "960px",
+	"menu": "1024px",
+	"desk": "960px"
+) !default;
+
+@mixin media($type, $bp1, $bp2:0) {
+	@if ($type == min) {
+		@media screen and (min-width: #{map-get($breakpoints, $bp1)}) {
+			@content;
+		}
+	} @else if ($type == max) {
+		@media screen and (max-width: #{map-get($breakpoints, $bp1)}) {
+			@content;
+		}
+	} @else if ($type == between) {
+		@media screen and (min-width: #{map-get($breakpoints, $bp1)}) and (max-width: #{map-get($breakpoints, $bp2)}) {
+			@content;
+		}
+	}
+}

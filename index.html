@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Site -->
+  <title>KAGU | コーディングを勉強するならKAGU</title>
+  <meta name="description" content="KAGUは、Webサイト制作におけるコーディングの教育教材です。">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/icon-192x192.png">
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="/assets/css/wordpress.css">
+  <link rel="stylesheet" href="/assets/css/common.min.css">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://kagu.rikukamimura-portfolio.com/">
+
+  <!-- NoIndex -->
+  <meta name=”robots” content=”noindex”>
+
+</head>
+<body>
+  <!-- header -->
+  <header class="l-header l-flex --justify --middle">
+    <h1 class="p-header__title">
+      <a href="/">
+        <img src="/assets/images/common/logo_primary.png" srcset="/assets/images/common/logo_primary.png 1x, /assets/images/common/logo_primary@2x.png 2x" alt="株式会社Kagu">
+      </a>
+    </h1>
+    <nav class="p-header__nav">
+      <a href="#main" class="u-screen-reader-text">本文までスキップ</a>
+      <h2 class="u-screen-reader-text">サイト内メニュー</h2>
+      <button id="js-buttonHamburger" type="button" class="p-hamburger" aria-controls="global-nav" aria-expanded="false">
+        <span class="p-hamburger__line">
+          <span class="u-screen-reader-text">メニューを開閉する</span>
+        </span>
+      </button>
+      <ul id="global-nav" class="p-header__nav__list" aria-hidden="true">
+        <li class="p-header__nav__item"><a href="/furniture/" tabIndex="-1">取扱い家具</a></li>
+        <li class="p-header__nav__item"><a href="/store/" tabIndex="-1">販売店・展示場一覧</a></li>
+        <li class="p-header__nav__item"><a href="/recruit/" tabIndex="-1">採用情報</a></li>
+        <li class="p-header__nav__item"><a href="/news/" tabIndex="-1">お知らせ</a></li>
+        <div class="p-header__nav__inner l-flex">
+          <li class="p-header__nav__item --store"><a href="/404/" tabIndex="-1" lang="en"><img src="/assets/images/common/icon_store.svg">Online Store</a></li>
+          <li class="p-header__nav__item --contact"><a href="/contact/" tabIndex="-1"><img src="/assets/images/common/icon_contact.svg">お問い合わせ</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header><!-- /l-header -->
+
+  <!-- l-main -->
+  <main class="l-main">
+    <!-- p-hero-top -->
+    <div class="swiper-container p-hero-top">
+      <figure class="swiper-wrapper p-hero-top__image">
+        <picture class="swiper-slide">
+          <source src="/assets/images/top/top_bg1_sp.jpg" srcset="/assets/images/top/top_bg1_sp.jpg 1x, /assets/images/top/top_bg1_sp@2x.jpg 2x" media="(max-width: 960px)">
+          <img src="/assets/images/top/top_bg1_pc.jpg" srcset="/assets/images/top/top_bg1_pc.jpg 1x, /assets/images/top/top_bg1_pc@2x.jpg 2x">
+        </picture>
+        <picture class="swiper-slide">
+          <source src="/assets/images/top/top_bg2_sp.jpg" srcset="/assets/images/top/top_bg2_sp.jpg 1x, /assets/images/top/top_bg2_sp@2x.jpg 2x" media="(max-width: 960px)">
+          <img src="/assets/images/top/top_bg2_pc.jpg" srcset="/assets/images/top/top_bg2_pc.jpg 1x, /assets/images/top/top_bg2_pc@2x.jpg 2x">
+        </picture>
+        <picture class="swiper-slide">
+          <source src="/assets/images/top/top_bg3_sp.jpg" srcset="/assets/images/top/top_bg3_sp.jpg 1x, /assets/images/top/top_bg3_sp@2x.jpg 2x" media="(max-width: 960px)">
+          <img src="/assets/images/top/top_bg3_pc.jpg" srcset="/assets/images/top/top_bg3_pc.jpg 1x, /assets/images/top/top_bg3_pc@2x.jpg 2x">
+        </picture>
+      </figure>
+      <p class="p-hero-top__catch-copy">
+        自分らしさを<br class="pc-none">レイアウトする
+      </p>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- /p-hero-top -->
+
+    <!-- p-news-top -->
+    <section class="p-news-top">
+      <div class="p-news-top__inner">
+        <h2 class="p-news-top__title c-title --primary">
+          お知らせ
+          <span lang="en">News</span>
+        </h2>
+        <ul class="p-news-top__list l-grid --tab2">
+          <li class="p-news-top__item">
+            <a href="/news/news-detail/">
+              <time class="p-news-top__item__time" datetime="2020-01-28">2020.01.28</time>
+              <span class="p-news-top__item__category">ニュースリリース</span>
+              <p class="p-news-top__item__text">「KAGU FANTASIA」が2020年X月XX日（月）東京・原宿にオープン</p>
+            </a>
+          </li>
+          <li class="p-news-top__item">
+            <a href="/news/news-detail/">
+              <time class="p-news-top__item__time" datetime="2020-01-12">2020.01.12</time>
+              <span class="p-news-top__item__category">ニュースリリース</span>
+              <p class="p-news-top__item__text">新春キャンペーンを実施</p>
+            </a>
+          </li>
+          <li class="p-news-top__item">
+            <a href="/news/news-detail/">
+              <time class="p-news-top__item__time" datetime="2019-12-26">2019.12.26</time>
+              <span class="p-news-top__item__category">お知らせ</span>
+              <p class="p-news-top__item__text">年末年始の営業日についてのお知らせ</p>
+            </a>
+          </li>
+          <li class="p-news-top__item">
+            <a href="/news/news-detail/">
+              <time class="p-news-top__item__time" datetime="2019-11-09">2019.11.09</time>
+              <span class="p-news-top__item__category">ニュースリリース</span>
+              <p class="p-news-top__item__text">人気ライフスタイル雑誌『KAGUGU』とのコラボ商品が登場</p>
+            </a>
+          </li>
+        </ul>
+        <p class="p-news-top__button"><a class="c-button --primary" href="/news/">お知らせ一覧へ</a></p>
+      </div>
+    </section>
+    <!-- /p-news-top -->
+
+    <!-- p-furniture-top -->
+    <section class="p-furniture-top">
+      <div class="l-container --large">
+        <h2 class="p-furniture-top__title c-title --primary">
+          取扱い家具
+          <span lang="en">Furniture</span>
+        </h2>
+        <ul class="p-furniture-top__list --main">
+          <li class="p-furniture-top__item">
+            <section class="p-furniture-top__item__content l-grid --tab2">
+              <div class="p-furniture-top__item__inner l-grid --middle-tab">
+                <h3 class="p-furniture-top__item__title">テーマで探す</h3>
+                <p class="p-furniture-top__item__text">モダン、ナチュラル、北欧、ヴィンテージ、和風、ハワイアン、アメリカン、ミニマルなど、テーマごとに家具をお探しいただけます。</p>
+                <p class="p-furniture-top__item__button"><a href="" class="c-button --primary">取扱い家具の一覧へ</a></p>
+              </div>
+              <figure class="p-furniture-top__item__image">
+                <img src="/assets/images/top/top_img_furniture01.jpg" srcset="/assets/images/top/top_img_furniture01.jpg 1x, /assets/images/top/top_img_furniture01@2x.jpg 2x" alt="様々なテーマの家具を取り揃えています">
+              </figure>
+            </section>
+          </li>
+          <li class="p-furniture-top__item">
+            <section class="p-furniture-top__item__content l-grid --tab2">
+              <div class="p-furniture-top__item__inner l-grid --middle-tab">
+                <h3 class="p-furniture-top__item__title">カラーで探す</h3>
+                <p class="p-furniture-top__item__text">レッド、ブルー、グリーン、イエロー、オレンジ、ピンク、パープル、ベージュ・アイボリー、ブラウン、ブラック、グレー、ホワイトなど、好みのカラーごとに家具をお探しいただけます。</p>
+                <p class="p-furniture-top__item__button"><a href="" class="c-button --primary">取扱い家具の一覧へ</a></p>
+              </div>
+              <figure class="p-furniture-top__item__image">
+                <img src="/assets/images/top/top_img_furniture02.jpg" srcset="/assets/images/top/top_img_furniture02.jpg 1x, /assets/images/top/top_img_furniture02@2x.jpg 2x" alt="様々なカラーの家具を取り揃えています">
+              </figure>
+            </section>
+          </li>
+          <li>
+            <ul class="p-furniture-top__list --sub l-grid --tab2 --pc3">
+              <li class="p-furniture-top__item">
+                <section class="p-furniture-top__item__content l-grid">
+                  <div class="p-furniture-top__item__inner">
+                    <h3 class="p-furniture-top__item__title">シーンで探す</h3>
+                    <p class="p-furniture-top__item__text">「リビング」や「ダイニング」、「寝室・ベッドルーム」、「キッチン」、「玄関・エントランス」、「書斎・ホームオフィス」などのシーンから、それぞれのシーンで使用する家具をお探しいただけます。</p>
+                    <p class="p-furniture-top__item__button">
+                      <a href="" class="c-button --primary" lang="en">
+                        Online Store
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.99 12.99">
+                          <line class="cls-1" x1="7.58" y1="0.5" x2="12.49" y2="0.5"/>
+                          <polyline class="cls-1" points="10.31 8.67 10.31 12.49 0.5 12.49 0.5 2.68 4.32 2.68"/>
+                          <line class="cls-1" x1="5.95" y1="7.04" x2="12.42" y2="0.57"/>
+                        </svg>
+                      </a>
+                    </p>
+                  </div>
+                  <figure class="p-furniture-top__item__image">
+                    <img src="/assets/images/top/top_img_furniture03.jpg" srcset="/assets/images/top/top_img_furniture03.jpg 1x, /assets/images/top/top_img_furniture03@2x.jpg 2x" alt="様々なシーンに合わせた家具を取り揃えています">
+                  </figure>
+                </section>
+              </li>
+              <li class="p-furniture-top__item">
+                <section class="p-furniture-top__item__content l-grid">
+                  <div class="p-furniture-top__item__inner">
+                    <h3 class="p-furniture-top__item__title">ブランドで探す</h3>
+                    <p class="p-furniture-top__item__text">
+                      他では出会えないソファやチェアが見つかります。<br>
+                      当社ブランド以外でも、セレクトラインアップの中で多数のブランドをお取扱いしております。
+                    </p>
+                    <p class="p-furniture-top__item__button">
+                      <a href="" class="c-button --primary" lang="en">
+                        Online Store
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.99 12.99">
+                          <line class="cls-1" x1="7.58" y1="0.5" x2="12.49" y2="0.5"/>
+                          <polyline class="cls-1" points="10.31 8.67 10.31 12.49 0.5 12.49 0.5 2.68 4.32 2.68"/>
+                          <line class="cls-1" x1="5.95" y1="7.04" x2="12.42" y2="0.57"/>
+                        </svg>
+                      </a>
+                    </p>
+                  </div>
+                  <figure class="p-furniture-top__item__image">
+                    <img src="/assets/images/top/top_img_furniture04.jpg" srcset="/assets/images/top/top_img_furniture04.jpg 1x, /assets/images/top/top_img_furniture04@2x.jpg 2x" alt="様々なブランドの家具を取り揃えています">
+                  </figure>
+                </section>
+              </li>
+              <li class="p-furniture-top__item">
+                <section class="p-furniture-top__item__content l-grid">
+                  <div class="p-furniture-top__item__inner">
+                    <h3 class="p-furniture-top__item__title">素材で探す</h3>
+                    <p class="p-furniture-top__item__text">チークやパイン、マホガニーやウォールナットなどの木材から、ファブリックやラタンなどの布・繊維、ステンレスやロートアイアンのような金属まで、あらゆる素材を使用した家具を取り揃えております。</p>
+                    <p class="p-furniture-top__item__button">
+                      <a href="" class="c-button --primary" lang="en">
+                        Online Store
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.99 12.99">
+                          <line class="cls-1" x1="7.58" y1="0.5" x2="12.49" y2="0.5"/>
+                          <polyline class="cls-1" points="10.31 8.67 10.31 12.49 0.5 12.49 0.5 2.68 4.32 2.68"/>
+                          <line class="cls-1" x1="5.95" y1="7.04" x2="12.42" y2="0.57"/>
+                        </svg>
+                      </a>
+                    </p>
+                  </div>
+                  <figure class="p-furniture-top__item__image">
+                    <img src="/assets/images/top/top_img_furniture05.jpg" srcset="/assets/images/top/top_img_furniture05.jpg 1x, /assets/images/top/top_img_furniture05@2x.jpg 2x" alt="様々な素材の家具を取り揃えています">
+                  </figure>
+                </section>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- /p-furniture-top -->
+
+    <!-- p-other-top -->
+    <section class="p-other-top">
+      <div class="l-container --large">
+        <h2 class="u-screen-reader-text">
+          その他
+          <span lang="en">Other</span>
+        </h2>
+        <section class="p-other-top__content l-grid --tab2">
+          <div class="p-other-top__content__inner">
+            <h3 class="p-other-top__content__title">販売店・展示場一覧</h3>
+            <p class="p-other-top__content__text">
+              KAGUの販売店をご覧いただけます。<br>
+              また、KAGUの家具は全国のショールームにてご覧いただけます。
+            </p>
+            <p class="p-other-top__content__link"><a href="/store/" class="u-arrow --right">販売店・展示場一覧を見る</a></p>
+          </div>
+          <figure class="p-other-top__content__image">
+            <img src="/assets/images/top/top_img_other01.jpg" srcset="/assets/images/top/top_img_other01.jpg 1x, /assets/images/top/top_img_other01@2x.jpg 2x" alt="販売店や展示場で実際に商品を手にとってみてください">
+          </figure>
+        </section>
+        <section class="p-other-top__content l-grid --tab2">
+          <div class="p-other-top__content__inner">
+            <h3 class="p-other-top__content__title" lang="en">Online Store</h3>
+            <p class="p-other-top__content__text">KAGUの家具はオンラインストアでもご購入いただけます。</p>
+            <p class="p-other-top__content__link"><a href="/404/" class="u-link">オンラインストアを見る</a></p>
+          </div>
+          <figure class="p-other-top__content__image">
+            <img src="/assets/images/top/top_img_other02.jpg" srcset="/assets/images/top/top_img_other02.jpg 1x, /assets/images/top/top_img_other02@2x.jpg 2x" alt="自宅にいながらショッピングを楽しめるオンラインストアもぜひご利用ください">
+          </figure>
+        </section>
+      </div>
+    </section>
+    <!-- /p-other-top -->
+
+    <!-- p-recruit -->
+    <section class="p-recruit">
+      <div class="l-container">
+        <h2 class="p-recruit__title c-title --recruit">
+          採用情報
+          <span lang="en">Recruit</span>
+        </h2>
+        <p class="p-recruit__text">
+          KAGUの新卒・中途採用情報を掲載しております。<br>
+          アルバイト情報についても掲載しております。
+        </p>
+        <p class="p-recruit__button"><a class="c-button --recruit" href="/recruit/">採用情報一覧へ</a></p>
+      </div>
+    </section>
+    <!-- /p-recruit -->
+
+  </main><!-- /l-main -->
+
+  <!-- l-footer -->
+  <footer class="l-footer">
+    <div class="p-footer l-container --large">
+      <div class="l-flex --vertical --side-pc --justify-pc --top-pc">
+        <address class="p-footer__information">
+          <p class="p-footer__information__logo">
+            <span class="u-screen-reader-text u-uppercase">Kagu</span>
+            <a href="/">
+              <img src="/assets/images/common/logo_secondary.png" srcset="/assets/images/common/logo_secondary.png 1x, /assets/images/common/logo_secondary@2x.png 2x" alt="Kagu">
+            </a>
+          </p>
+          <ul class="p-footer__information__list">
+            <li class="p-footer__information__address">
+              株式会社<span class="u-uppercase">Kagu</span><br>
+              愛知県名古屋市西区歌里町4-4
+            </li>
+            <li class="p-footer__information__telephone" lang="en">
+              <span class="u-uppercase">TEL</span>. <a href="tel:052-000-0000">052-000-0000</a>
+            </li>
+          </ul>
+        </address>
+        <ul class="p-footer__nav l-flex --vertical --side-pc --wrap-pc">
+          <div class="p-footer__nav__inner">
+            <li class="p-footer__nav__item"><a href="/furniture/">取扱い家具</a></li>
+            <li class="p-footer__nav__item --parent">
+              <a href="/store/">販売店・展示場一覧</a>
+              <ul class="p-footer__nav__sub-list">
+                <li class="p-footer__nav__sub-item"><a href="/store/shop/">販売店一覧</a></li>
+                <li class="p-footer__nav__sub-item"><a href="/store/showroom/">展示場一覧</a></li>
+              </ul>
+            </li>
+          </div>
+          <div class="p-footer__nav__inner">
+            <li class="p-footer__nav__item"><a href="/recruit/">採用情報</a></li>
+            <li class="p-footer__nav__item"><a href="/news/">お知らせ</a></li>
+            <li class="p-footer__nav__item"><a href="/contact/">お問い合わせ</a></li>
+          </div>
+        </ul>
+      </div>
+      <div class="p-footer__bottom l-flex --vertical --justify-pc --reverse-pc">
+        <p class="p-footer__bottom__privacy-policy"><a href="/privacy-policy/">プライバシーポリシー</a></p>
+        <p class="p-footer__bottom__copyright"><small>&copy; <a href="/contact/">2020 <span class="u-uppercase">Kagu</span> inc.</a></small></p>
+      </div>
+    </div>
+  </footer><!-- /l-footer -->
+  <script src="/assets/js/jQuery3.5.1.js"></script>
+  <script src="/assets/js/hamburger.js"></script>
+  <script src="/assets/js/swiper-bundle.min.js"></script>
+  <script src="/assets/js/swiper.js"></script>
+</body>
+</html>

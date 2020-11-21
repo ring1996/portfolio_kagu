@@ -1,0 +1,10 @@
+.u-link {
+  @include hover-action;
+  &::after {
+    content: url("../images/common/icon_link.svg");
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-left: 5px;
+  }
+}

@@ -1,0 +1,149 @@
+.p-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: $color-white;
+  &__information {
+    text-align: center;
+    &__logo {
+      a {
+        @include hover-action;
+        display: inline-block;
+        width: 110px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &__list {
+      margin-top: 20px;
+    }
+    &__address {
+      font-size: 1.4rem;
+      line-height: 1.8;
+    }
+    &__telephone {
+      font-size: 2.4rem;
+      margin-top: 30px;
+      span {
+        font-size: 2rem;
+      }
+      a {
+        @include hover-action;
+      }
+    }
+  }
+  &__nav {
+    font-size: 1.4rem;
+    margin-top: 25px;
+    &__inner {
+      @include inner-reset;
+      &:first-child {
+        border-top: 1px solid $color-border;
+      }
+    }
+    &__item {
+      border-bottom: 1px solid $color-border;
+      a {
+        display: block;
+        padding: 20px 5%;
+        background-image: url("../images/common/icon_arrow_white.svg");
+        background-position: center right 5%;
+        background-repeat: no-repeat;
+        background-size: 20px 5px;
+        @include hover-action;
+      }
+      &.--parent {
+        padding-bottom: 20px;
+      }
+    }
+    &__sub-item {
+      a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-image: none;
+      }
+    }
+  }
+  &__bottom {
+    text-align: center;
+    font-size: 1.2rem;
+    &__privacy-policy {
+      margin-top: 30px;
+      a {
+        @include hover-action;
+      }
+    }
+    &__copyright {
+      margin-top: 30px;
+      a {
+        @include hover-action;
+      }
+      small {
+        font-size: 100%;
+      }
+    }
+  }
+}
+
+@include media(min, desk) {
+  .p-footer {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    &__information {
+      text-align: left;
+      &__logo {
+        a {
+          width: 145px;
+        }
+      }
+      &__list {
+        margin-top: 30px;
+      }
+    }
+    &__nav {
+      width: 360px;
+      margin-top: 0;
+      &__inner {
+        width: 50%;
+        margin: 0;
+        &:first-child {
+          border-top: none;
+        }
+      }
+      &__item {
+        margin-top: 20px;
+        border-bottom: none;
+        &:first-child {
+          margin-top: 0;
+        }
+        a {
+          padding: 0;
+          background-image: none;
+        }
+        &.--parent {
+          padding-bottom: 0;
+        }
+      }
+      &__sub-item {
+        font-size: 1.3rem;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        a {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+    &__bottom {
+      text-align: center;
+      font-size: 1.2rem;
+      &__privacy-policy {
+        margin-top: 100px;
+      }
+      &__copyright {
+        margin-top: 100px;
+      }
+    }
+  }
+}

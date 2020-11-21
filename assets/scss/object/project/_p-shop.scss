@@ -1,0 +1,164 @@
+.p-shop {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  &__link {
+    margin-top: 30px;
+    &__image {
+      display: none;
+    }
+    &__list {
+      text-align: center;
+      grid-gap: 1px;
+    }
+    &__item {
+      border: 1px solid $color-brown2;
+      a {
+        display: block;
+        width: 100%;
+        padding: 2px 4px 6px;
+        background-color: $color-white;
+        color: $color-brown2;
+        font-size: 1.2rem;
+        font-weight: 500;
+        outline: none;
+        transition-property: color background-color;
+        transition-duration: .3s;
+        transition-timing-function: ease-out;
+        &:hover,
+        &:focus {
+          color: $color-white;
+          background-color: $color-brown2;
+        }
+        .cls-1 {
+          fill: currentColor;
+        }
+        svg {
+          display: block;
+          margin: 0 auto;
+          width: 11px;
+          height: 7px;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+  &__content {
+    margin-top: 40px;
+    &__title {
+      font-size: 1.6rem;
+      font-weight: 500;
+      background-color: $color-gray;
+      padding: 20px;
+    }
+    &__item {
+      padding-bottom: 30px;
+      padding-left: 20px;
+      border-bottom: 1px solid $color-brown3;
+      &:last-of-type {
+        border-bottom: none;
+      }
+      &__name {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 30px;
+      }
+      &__address {
+        font-size: 1.4rem;
+        margin-top: 20px;
+        a {
+          @include hover-action;
+        }
+      }
+      &__button {
+        margin-top: 30px;
+        a {
+          .cls-1 {
+            stroke: currentColor;
+            fill: none;
+            stroke-linecap:round;
+            stroke-linejoin:round;
+          }
+          svg {
+            width: 13px;
+            height: 13px;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media(min, triple) {
+  .p-shop {
+    padding-top: 80px;
+    &__link {
+      position: relative;
+      width: 500px;
+      margin: 60px auto 0;
+      &__image {
+        display: block;
+        margin: 0 auto;
+      }
+      &__item {
+        position: absolute;
+        width: 100px;
+        &.--hokkaido {
+          top: 70px;
+          left: 360px;
+        }
+        &.--tohoku {
+          top: 223px;
+          left: 355px;
+        }
+        &.--kanto {
+          top: 380px;
+          left: 305px;
+        }
+        &.--chubu {
+          top: 330px;
+          left: 205px;
+        }
+        &.--kinki {
+          top: 393px;
+          left: 142px;
+        }
+        &.--chugoku {
+          top: 413px;
+          left: 30px;
+        }
+        &.--shikoku {
+          top: 473px;
+          left: 69px;
+        }
+        &.--kyushu {
+          top: 485px;
+          left: -50px;
+        }
+        a {
+          padding-top: 0;
+          padding-bottom: 5px;
+        }
+      }
+    }
+    &__content {
+      margin-top: 60px;
+      &__title {
+        font-size: 2rem;
+        padding: 30px;
+      }
+      &__item {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 40px;
+        padding-left: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        &__name {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}

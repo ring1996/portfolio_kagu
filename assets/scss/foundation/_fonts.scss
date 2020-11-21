@@ -1,0 +1,55 @@
+/* Noto Sans JP 400 */
+@font-face {
+  font-family: "Noto Sans JP";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/assets/fonts/NotoSansJP/Regular/NotoSansJP-Regular.woff2") format("woff2"),
+       url("/assets/fonts/NotoSansJP/Regular/NotoSansJP-Regular.woff") format("woff");
+}
+
+/* Noto Sans JP 500 */
+@font-face {
+  font-family: "Noto Sans JP";
+  font-weight: 500;
+  font-style: normal;
+  src: url("/assets/fonts/NotoSansJP/Medium/NotoSansJP-Medium.woff2") format("woff2"),
+       url("/assets/fonts/NotoSansJP/Medium/NotoSansJP-Medium.woff") format("woff");
+}
+
+/* Noto Sans JP 700 */
+@font-face {
+  font-family: "Noto Sans JP";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/assets/fonts/NotoSansJP/Bold/NotoSansJP-Bold.woff2") format("woff2"),
+       url("/assets/fonts/NotoSansJP/Bold/NotoSansJP-Bold.woff") format("woff");
+}
+
+/* Noto Serif JP 500 */
+@font-face {
+  font-family: "Noto Serif JP";
+  font-weight: 500;
+  font-style: normal;
+  src: url("/assets/fonts/NotoSerifJP/Medium/NotoSerifJP-Medium.woff2") format("woff2"),
+       url("/assets/fonts/NotoSerifJP/Medium/NotoSerifJP-Medium.woff") format("woff");
+}
+
+/* Quicksand 500 */
+@font-face {
+  font-family: "Quicksand";
+  font-weight: 500;
+  font-style: normal;
+  src: url("/assets/fonts/Quicksand/Medium/Quicksand-Medium.woff2") format("woff2"),
+       url("/assets/fonts/Quicksand/Medium/Quicksand-Medium.woff") format("woff"),
+       url("/assets/fonts/Quicksand/Medium/Quicksand-Medium.eot") format("eot");
+}
+
+/* Quicksand 700 */
+@font-face {
+  font-family: "Quicksand";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/assets/fonts/Quicksand/Bold/Quicksand-Bold.woff2") format("woff2"),
+       url("/assets/fonts/Quicksand/Bold/Quicksand-Bold.woff") format("woff"),
+       url("/assets/fonts/Quicksand/Bold/Quicksand-Bold.eot") format("eot");
+}
